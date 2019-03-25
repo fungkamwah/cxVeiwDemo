@@ -1,0 +1,10 @@
+<resources>
+    <!--项目名称-->
+    <string name="app_name">cxVeiwDemo</string>
+
+    <!--添加的文本-->
+    <string name="tv2">文本2</string>
+    <string name="input_tips">请输入内容</string>
+    <string name="btn1">按钮A</string>
+    <string name="btn2">按钮B</string>
+</resources>

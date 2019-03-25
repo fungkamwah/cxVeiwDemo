@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--1宽随内容，2高随内容，3内容为『文本1』，4颜色值#ff0000红,字大小16sp,
+        外距5dp-->
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文本1"
+            android:textColor="#ff0000"
+            android:textSize="16sp"
+            android:layout_margin="5dp"/>
+
+        <!--与文本1不同，文本2的属性值没直接写在这，而是引用了res文件的配置-->
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv2"
+            android:textSize="@dimen/t_size"
+            android:textColor="@color/cx_green"
+            android:layout_margin="@dimen/text_margin"/>
+
+        <!--指定一个id，hint引用之前在sings.xml中添加的一个文本，背景引用res中的drawable资源-->
+        <EditText
+            android:id="@+id/editText_1"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_tips"
+            android:background="@drawable/ed_bg"/>
+
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn1"/>
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn2"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_bg"/>
+
+        <!--没有百分比的进度条，样式由style决定-->
+        <ProgressBar
+
+            android:layout_margin="30dp"
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--带百分比的进度条-->
+        <ProgressBar
+            android:layout_margin="30dp"
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:progress="30"
+            android:max="100"
+            android:layout_height="30dp" />
+
+
+        <!---scaleType是图片适应控件的方式，
+        src是图片内容，引用了res中的mipmap资源,
+        padding内边距为5dp-->
+        <ImageView
+            android:id="@+id/image"
+            android:scaleType="fitXY"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:padding="5dp"
+            android:background="@color/cx_blue"
+            android:src="@mipmap/ic_launcher"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

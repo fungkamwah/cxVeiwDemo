@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--生成的主题的颜色配置-->
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--自己添加的颜色-->
+    <color name="cx_green">#00aa00</color>
+    <color name="cx_blue">#0000cc</color>
+
+</resources>
