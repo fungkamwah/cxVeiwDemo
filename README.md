@@ -1,15 +1,13 @@
-# cxVeiwDemo
-Android上手练习3.常用界面元素view与res资源文件
 本节介绍Android的常用控件，以及控件配合res文件的使用。
 
 ## 1 在layout文件中编辑view
 ## 1.1 新建工程
 本次新建项目，选择【Empty Activity】，让AndroidStudio帮我们创建一个空的Activity，并会自动在AndroidManifest.xml配置好默认的Activity。
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190312-103114.png)
+![image](http://youdao.mikezz.cn/QQ20190312-103114.png-wardo)
 
 生成的是一个可以直接运行Android项目。
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190312-104251.png)
+![image](http://youdao.mikezz.cn/QQ20190312-104251.png-wardo)
 
 
 其中生成的layout_main使用的是ConstraintLayout 
@@ -85,7 +83,7 @@ TextView即文本控件，在LinearLayout布局内添加一个子元素TextView�
 
 运行看效果。
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190318-154247.png)
+![image](http://youdao.mikezz.cn/QQ20190318-154247.png-wardo)
 
 下面试一下配合string.xml，colors.xml和dimens.xml使用。
 
@@ -171,7 +169,7 @@ res/values/dimens.xml是尺寸的配置文件，没有的话手动创建一个�
 </ScrollView>
 ```
 运行看效果：
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190318-161552.png)
+![image](http://youdao.mikezz.cn/QQ20190318-161552.png-wardo)
 
 
 
@@ -225,15 +223,15 @@ res/values/dimens.xml是尺寸的配置文件，没有的话手动创建一个�
 </ScrollView>
 ```
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190318-163018.png)
+![image](http://youdao.mikezz.cn/QQ20190318-163018.png-wardo)
 
 运行起来，看到一个带输入提示的EditText文本输入控件，控件获得焦点时弹出键盘。
 
 
 下面修改通过修改这个EditText的background来改变它的样式。
 在res/drawable目录下新建shape文件ed_bg.xml。
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190318-164002.png)
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190318-164136.png)
+![image](http://youdao.mikezz.cn/QQ20190318-164002.png-wardo)
+![image](http://youdao.mikezz.cn/QQ20190318-164136.png-wardo)
 
 编辑ed_bg.xml内容如下：
 ```
@@ -271,7 +269,7 @@ res/values/dimens.xml是尺寸的配置文件，没有的话手动创建一个�
 
 运行看效果。
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190318-165013.png)
+![image](http://youdao.mikezz.cn/QQ20190318-165013.png-wardo)
 
 
 ## 1.4 Button
@@ -310,7 +308,7 @@ res/values/dimens.xml是尺寸的配置文件，没有的话手动创建一个�
 
 看效果：
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190318-170854.png)
+![image](http://youdao.mikezz.cn/QQ20190318-170854.png-wardo)
 
 ##  1.5 ProgressBar
 
@@ -336,7 +334,7 @@ res/values/dimens.xml是尺寸的配置文件，没有的话手动创建一个�
 
 运行效果：
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190318-172919.png)
+![image](http://youdao.mikezz.cn/QQ20190318-172919.png-wardo)
 
 ## 1.6 ImageView图片
 
@@ -357,7 +355,7 @@ res/values/dimens.xml是尺寸的配置文件，没有的话手动创建一个�
 
 运行一下。
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190318-173529.png)
+![image](http://youdao.mikezz.cn/QQ20190318-173529.png-wardo)
 
 可以看到图片已经超出了屏幕，这时我们开始时候用的ScrollView就有作用了，可以往下滚动屏幕，看到整个图片。
 
@@ -612,7 +610,7 @@ public class MainActivity extends AppCompatActivity {
 
 查看logcat如图
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190319-155934.png)
+![image](http://youdao.mikezz.cn/QQ20190319-155934.png-wardo)
 
 尝试点击和长安各个view，观察界面view的变化。
 
